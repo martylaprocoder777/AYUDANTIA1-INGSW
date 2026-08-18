@@ -40,14 +40,14 @@ const obtenerConsejo = async () => {
 
         // 2.4 Muestra el consejo en el HTML usando Template Literals (``)
         // TODO: textoConsejo.textContent = ...
-        textoConsejo.textContent = `💡 ${consejo}`;
+        textoConsejo.textContent = ` ${consejo}`;
         
     } catch (error) {
         // Qué pasa si hay un error (ej. el usuario se queda sin internet)
         // TODO: console.error...
         console.error('Error al obtener el consejo:', error);
         // TODO: text.textcontent = ...
-        textoConsejo.textContent = "❌ Ocurrió un error al obtener el consejo. Intenta de nuevo.";
+        textoConsejo.textContent = " Ocurrió un error al obtener el consejo. Intenta de nuevo.";
     
     } finally {
         // El bloque finally se ejecuta SIEMPRE, haya error o no.
@@ -62,3 +62,4 @@ const obtenerConsejo = async () => {
 
 // TODO: boton.addEventListener...
 boton.addEventListener('click', obtenerConsejo);
+//fin 
